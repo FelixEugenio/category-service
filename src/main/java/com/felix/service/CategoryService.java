@@ -10,6 +10,6 @@ public interface CategoryService {
     Category saveCategory(Category category, SalonDTO salon);
     Category getCategoryById(Long id);
     Set<Category> getAllCategoriesBySalon(Long id);
-    void deleteCategoryById(Long id);
+    void deleteCategoryById(Long id,Long salonId) throws Exception;
 
 }
